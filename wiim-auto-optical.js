@@ -5,6 +5,9 @@ const checker = async () => {
     const response = await fetch(`https://${WIIM_IP}/httpapi.asp?command=getPlayerStatus`);
     const data = await response.json();
 
+    // 49 - HDMI
+    // 43 - OPTICAL
+
     if (String(data.mode) === '49') {
       console.log('HDMI detected, switching to OPTICAL');
 
