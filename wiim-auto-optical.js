@@ -1,5 +1,5 @@
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
-const WIIM_IP = '192.168.0.131';
+const WIIM_IP = '192.168.0.130';
 
 const checker = async () => {
     const response = await fetch(`https://${WIIM_IP}/httpapi.asp?command=getPlayerStatus`);
